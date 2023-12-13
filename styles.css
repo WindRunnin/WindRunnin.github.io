@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.nav-item:hover {
+    background-color: #555;
+}
+
+.content {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center content vertically */
+}
+
+.text-container {
+    flex: 1;
+    /* Allow text container to grow and take remaining space */
+    padding-right: 20px;
+    /* Add space between text and image container */
+    margin: 20px;
+}
+
+.image-container {
+    border: 5px solid black;
+    /* Border style */
+    border-radius: 10px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Hide overflowing content (if any) */
+    max-width: 300px;
+    /* Adjust as needed */
+    margin: 20px;
+}
+
+.profilepic {
+    width: 100%;
+    /* Make the image fill the container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove extra space caused by default inline layout */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+  
+.text-container1, .text-container2 {
+    margin-bottom: 20px;
+}
+
+
+  
+  .carousel {
+  position: relative;
+  max-width: 300px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the carousel horizontally */
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%; /* Adjust the width to accommodate all slides */
+  transition: margin-left 0.5s;
+  margin: 0 auto; /* Center the slides within the carousel */
+}
+
+.slides {
+  flex: 0 0 100%; /* Each slide takes up 100% of the width */
+  text-align: center; /* Center the images */
+}
+
+.slides img {
+  width: 300px; /* Adjust image size */
+  height: auto;
+  display: block; /* Center the images horizontally */
+  margin: 0 auto;
+}
+
+/* Update slide position based on checked radio button */
+#slide1:checked ~ .slides { margin-left: 0; }
+#slide2:checked ~ .slides { margin-left: -100%; }
+#slide3:checked ~ .slides { margin-left: -200%; }
+#slide4:checked ~ .slides { margin-left: -300%; }
+#slide5:checked ~ .slides { margin-left: -400%; }
+#slide6:checked ~ .slides { margin-left: -500%; }
+
+.navigation {
+  text-align: center;
+  margin-top: 10px;
+}
